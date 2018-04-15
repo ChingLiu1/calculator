@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(170,0,0);
+}
+
+#calcWrapper{
+    width: 500px;
+    margin: 0px auto;
+    margin-top: 150px;
+    background-color: rgb(20,145,215);
+    border-radius: 10px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
