@@ -4,6 +4,7 @@ body{
 
 #calcWrapper{
     width: 400px;
+    height: 430px;
     margin: 0px auto;
     margin-top: 150px;
     background-color: rgb(20,145,215);
@@ -50,4 +51,18 @@ button{
     margin-top:10px;
     border-radius: 10px;
     
+}
+
+#base{
+    clear: left;
+    margin-top: 30px;
+}
+.symbol{
+    width:100px;
+    float:left;
+    margin-left: 25px;
+}
+.bs{
+    width:37px;
+    height: 40px;
 }
