@@ -1,4 +1,5 @@
-
+"browser" : true
+/* jshint browser: true */
 //the code to prevent the buttons from submitting
 document.querySelector('form').addEventListener('submit', function(e){
     e.preventDefault();
@@ -25,10 +26,19 @@ var buttons = document.getElementsByClassName('c');
 
 //console.log(buttons.length);
 
+var currentValue = expression.defaultValue;
+console.log(currentValue);
 for  (var i = 0; i < buttons.length; i++){
     
     buttons[i].addEventListener('click', function(){
-        expression.defaultValue = this.value; 
+        
+    var inValue = this.value;
+    currentValue = currentValue + inValue;
+    expression.defaultValue = currentValue;
+        
     })
     
 }
+
+
+
