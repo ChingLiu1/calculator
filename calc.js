@@ -9,19 +9,6 @@ document.querySelector('form').addEventListener('submit', function(e){
     e.preventDefault();
 });
 
-//code for reseting the expression and output 
-
-
-
-
-delButton.addEventListener('click', function(e){
-    //console.log("am clicked");
-    
-    expression.defaultValue = "";
-    answer.defaultValue = "";
-});
-
-
 //designed the button when clicked
 //the button value should appear on the expression box
 
@@ -38,8 +25,20 @@ for  (var i = 0; i < buttons.length; i++){
 
 function intiateSequence(){
     var product = document.getElementById('input').value;
-    
+    //var spliting = product.split(product.match(pattern));
+    var investment = document.getElementById('output');
+    investment.defaultValue = eval(product);
 }
+
+//code for reseting the expression and output 
+delButton.addEventListener('click', function(e){
+    //console.log("am clicked");
+    
+    expression.defaultValue = "";
+    answer.defaultValue = "";
+    currentValue = "";
+});
+
 
 
 
