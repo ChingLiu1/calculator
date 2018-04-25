@@ -24,19 +24,27 @@ for  (var i = 0; i < buttons.length; i++){
 }
 
 function intiateSequence(){
-    var product = document.getElementById('input').value;
-    //var spliting = product.split(product.match(pattern));
-    var investment = document.getElementById('output');
-    investment.defaultValue = eval(product);
+    
+    try{
+        var product = document.getElementById('input').value;
+        var investment = document.getElementById('output');
+        investment.defaultValue = eval(product);          
+        
+    }
+    catch(e){
+       //console.log("incomplete expression");
+    }
+    
+    
 }
 
 //code for reseting the expression and output 
 delButton.addEventListener('click', function(e){
     //console.log("am clicked");
-    
     expression.defaultValue = "";
     answer.defaultValue = "";
-    currentValue = "";
+    currentValue = "";  
+    
 });
 
 
